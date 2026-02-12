@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 import javax.swing.JOptionPane;
 
@@ -20,6 +21,10 @@ public class CajeroAutomatico {
             opcion = Integer.parseInt(JOptionPane.showInputDialog(menu));
 
             switch (opcion) {
+    // Consultar saldo y Retirar dinero
+ 
+
+          
 
                 case 1:
                     JOptionPane.showMessageDialog(null,
@@ -27,12 +32,29 @@ public class CajeroAutomatico {
                     break;
 
                 case 2:
-                    
-                    break;
 
+        double retiro = Double.parseDouble(
+            JOptionPane.showInputDialog" Ingrese el monto que quiera retirar:"
+        );
+
+        if(retiro> 0 && retiro<= saldo){
+            
+            saldo-=retiro;
+            JOptionPane.showMessageDialog(null, "Retiro exitoso.\n ingrese el nuevo saldo " + saldo);
+
+        }else{
+
+            JOptionPane.showMessageDialog(null,"no tiene el monto suficiente ingresado o es incorrecto";)
+        }
+        break;
                 case 3:
                     
                     break;
+
+   
+
+
+    
 
                 case 4:
                     JOptionPane.showMessageDialog(null,
