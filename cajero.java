@@ -47,20 +47,3 @@ public class CajeroAutomatico {
         } while (opcion != 4);
     }
 }
-
-
-    // Menu cajero
-
-
-
-    // Consultar saldo y Retirar dinero
-
-
-
-
-    // Depositar dinero
-    
-
-
-    // Validaciones
-}
