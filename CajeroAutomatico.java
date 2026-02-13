@@ -48,7 +48,10 @@ public class CajeroAutomatico {
         }
         break;
                 case 3:
-                    
+                    double deposito = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el monto a depositar:"));
+
+                    saldo += deposito;
+                    JOptionPane.showMessageDialog(null, "Depósito realizado con exito \nNuevo saldo: $" + saldo);
                     break;
 
    
